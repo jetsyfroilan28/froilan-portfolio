@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MY PORTFOLIO</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">My Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section dark">
+    <div class="content animate">
+      <h1>MY PORTFOLIO WEBSITE</h1>
+      <p>Hello, I'm Jetsy B. Froilan, BSIT 2C</p>
+      <button class="btn" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Get Started</button>
+    </div>
+    <figure>
+      <img 
+        src="image/mee.jpeg" 
+        alt="Young woman beside a river..." 
+        class="tilted-image"
+      >
+    </figure>
+  </section>
+
+  <section id="about" class="section light">
+    <div class="content animate">
+      <h2>About Me</h2>
+      <p>I love spending time near rivers and the ocean to calm my mind. I also enjoy cooking and playing volleyball.</p>
+      <div class="btn-group">
+        <button class="btn" onclick="document.getElementById('hobbies').scrollIntoView({ behavior: 'smooth' });" aria-label="Go to Hobbies">
+          <span>Next</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <figure>
+      <img 
+        src="image/meeee.jpeg" 
+        alt="Young woman with a plant" 
+        class="tilted-image"
+      >
+
+     </section>
+    <section id="hobbies" class="section white">
+      <div class="content animate">
+        <h2>My Hobbies</h2>
+        <p>Here are some of the activities that bring me joy and peace:</p>
+        
+        <ul class="hobby-list">
+          <li>🍳 Cooking delicious meals</li>
+          <li>🏐 Playing volleyball with friends</li>
+        </ul>
+        <div class="btn-group" style="display: flex; justify-content: center; margin-top: 1.5rem;">
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" aria-label="Go to Contact">
+            <span>Next</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+
+    <div class="gallery" style="margin-top: 2rem;">
+      <div class="hobby-image" style="text-align: center;">
+        <img 
+          src="image/cooking.jfif" 
+          alt="Cooking activity" 
+          style="width: 250px; height: 180px; object-fit: cover; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"
+        >
+        <p style="margin-top: 8px;">Cooking</p>
+      </div>
+      <div class="hobby-image" style="text-align: center;">
+        <img 
+          src="image/volleyball.jfif" 
+          alt="Playing volleyball" 
+          style="width: 250px; height: 180px; object-fit: cover; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);"
+        >
+        <p style="margin-top: 8px;">Playing Volleyball</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="section light">
+    <div class="content animate">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Jetsy B. Froilan" required />
+        <input type="email" placeholder="froilanjetsy074@gmail.com" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div style="margin-top: 18px;">
+        <a 
+          href="https://github.com/zhedsjimenez-cmyk/jimenez_portfolio" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn" 
+          aria-label="Visit my GitHub profile"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.48 2 2 6.58 2 12.26..."/>
+          </svg>
+          <span>GitHub Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
